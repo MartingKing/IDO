@@ -111,7 +111,7 @@ public class CommmonUtil {
         } else {
             names.add(0, notificationTitle);
             names.add(1, notificationTitle);
-            names.add(2, notificationText);
+            names.add(2, notificationText+"");
         }
         return names;
     }
