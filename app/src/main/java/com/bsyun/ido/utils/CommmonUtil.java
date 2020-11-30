@@ -42,6 +42,9 @@ public class CommmonUtil {
             case CommmonUtil.weihat:
                 app = "微信";
                 break;
+            case CommmonUtil.xiaomi:
+                app = "小米办公";
+                break;
         }
         return app;
     }
