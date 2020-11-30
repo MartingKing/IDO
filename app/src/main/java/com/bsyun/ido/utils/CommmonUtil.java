@@ -14,7 +14,7 @@ public class CommmonUtil {
     public static final String feishu = "com.ss.android.lark";
     public static final String knock = "com.aimi.knock";
     public static final String xiaomi = "com.ss.android.lark.kami";
-    public static final String ACTION_NOTIFY = "com.bsyun.ido.NotifiMsgService";
+    public static final String ACTION_NOTIFY = "com.ido.notification";
 
     public static final String base_url = "http://172.18.20.117:8000";
     public static final String msg_url = "/msg/im_add";
