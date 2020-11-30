@@ -109,9 +109,9 @@ public class CommmonUtil {
             names.add(1, groupName);
             names.add(2, msg);
         } else {
-            names.add(0, "notificationText is null");
-            names.add(1, "notificationText is null");
-            names.add(2, "notificationText is null");
+            names.add(0, notificationTitle);
+            names.add(1, notificationTitle);
+            names.add(2, notificationText);
         }
         return names;
     }

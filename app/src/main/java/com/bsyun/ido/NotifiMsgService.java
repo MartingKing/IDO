@@ -30,7 +30,7 @@ import okhttp3.Response;
 @SuppressLint("NewApi")
 public class NotifiMsgService extends NotificationListenerService {
 
-    private static final String TAG = "DHD";
+    private static final String TAG = "NotifiMsgService";
 
     // 在收到消息时触发
     @Override
@@ -43,10 +43,10 @@ public class NotifiMsgService extends NotificationListenerService {
         // 获取接收消息的内容
         String notificationText = extras.getString(Notification.EXTRA_TEXT);
         long notificationTime = sbn.getPostTime();
-        Log.i("DHD", "notificationTitle " + notificationTitle);
-        Log.i("DHD", "notificationText " + notificationText);
-        Log.i("DHD", "notificationPkg " + notificationPkg);
-        Log.i("DHD", "getPostTime " + DateUtil.getDateToString(sbn.getPostTime()));
+        Log.i(TAG, "notificationTitle " + notificationTitle);
+        Log.i(TAG, "notificationText " + notificationText);
+        Log.i(TAG, "notificationPkg " + notificationPkg);
+        Log.i(TAG, "getPostTime " + DateUtil.getDateToString(sbn.getPostTime()));
         Intent intent = new Intent();
         intent.putExtra("notificationTitle", notificationTitle);
         intent.putExtra("notificationPkg", notificationPkg);

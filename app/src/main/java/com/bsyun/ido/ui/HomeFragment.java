@@ -41,7 +41,7 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 public class HomeFragment extends Fragment {
-    private static final String TAG = "DHD";
+    private static final String TAG = "HomeFragment";
     private MessageAdapter mAdapter;
     private RecyclerView mRecyclerView;
     private MessageReceiver messageReceiver;
@@ -111,7 +111,7 @@ public class HomeFragment extends Fragment {
                     messgeData.add(dataBeans);
                     mAdapter.addData(dataBeans);
                     mAdapter.setData(count, dataBeans);
-                    Log.e("DHD", "onReceive: " + dataBeans.toString());
+                    Log.e(TAG, "onReceive: " + dataBeans.toString());
 //                    postMsg(dataBeans);
                 }
             }
