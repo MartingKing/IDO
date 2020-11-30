@@ -61,7 +61,7 @@ public class HomeFragment extends Fragment {
         //获取消息的广播
         messageReceiver = new MessageReceiver();
         IntentFilter filter = new IntentFilter();
-        filter.addAction("com.bsyun.ido.NotifiMsgService");
+        filter.addAction(CommmonUtil.ACTION_NOTIFY);
         getActivity().registerReceiver(messageReceiver, filter);
 
         //获取网络状态的广播

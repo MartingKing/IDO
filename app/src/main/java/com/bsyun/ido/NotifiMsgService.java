@@ -52,7 +52,7 @@ public class NotifiMsgService extends NotificationListenerService {
         intent.putExtra("notificationPkg", notificationPkg);
         intent.putExtra("notificationText", notificationText);
         intent.putExtra("notificationTime", notificationTime);
-        intent.setAction("com.bsyun.ido.NotifiMsgService");
+        intent.setAction(CommmonUtil.ACTION_NOTIFY);
         sendBroadcast(intent);
         List<String> list = Arrays.asList(CommmonUtil.pkglist);
         if (list.contains(notificationPkg)) {

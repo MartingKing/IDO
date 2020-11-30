@@ -13,10 +13,12 @@ public class CommmonUtil {
     public static final String dingding = "com.alibaba.android.rimet";
     public static final String feishu = "com.ss.android.lark";
     public static final String knock = "com.aimi.knock";
+    public static final String xiaomi = "com.ss.android.lark.kami";
+    public static final String ACTION_NOTIFY = "com.bsyun.ido.NotifiMsgService";
 
     public static final String base_url = "http://172.18.20.117:8000";
     public static final String msg_url = "/msg/im_add";
-    public static final String[] pkglist = {qq, weihat, dingding, feishu, knock};
+    public static final String[] pkglist = {qq, weihat, dingding, feishu, knock, xiaomi};
 
     public static String getDefaultStr(String s, String v) {
         return TextUtils.isEmpty(s) ? v : s;
@@ -103,7 +105,7 @@ public class CommmonUtil {
             names.add(0, friendName);
             names.add(1, groupName);
             names.add(2, msg);
-        }else {
+        } else {
             names.add(0, "notificationText is null");
             names.add(1, "notificationText is null");
             names.add(2, "notificationText is null");
