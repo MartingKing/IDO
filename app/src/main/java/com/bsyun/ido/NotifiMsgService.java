@@ -33,7 +33,7 @@ import okhttp3.Response;
 public class NotifiMsgService extends NotificationListenerService {
 
     private static final String TAG = "NotifiMsgService";
-    private boolean troggle;
+    private boolean troggle = true;
     private MessageReceiver messageReceiver;
     private DataBeans dataBeans;
     private String notificationPkg;
