@@ -5,9 +5,11 @@
     <string name="nav_header_title">😄</string>
     <string name="nav_header_subtitle">白山值班小能手</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">权限设置</string>
+    <string name="action_settings">消息通知权限</string>
+    <string name="access_ser">无障碍服务</string>
 
     <string name="menu_home">群聊列表</string>
     <string name="menu_gallery">单聊消息</string>
     <string name="menu_slideshow">白名单</string>
+    <string name="hongbao">chat</string>
 </resources>

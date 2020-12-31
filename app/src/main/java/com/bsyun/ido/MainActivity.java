@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,6 +26,8 @@ import com.bsyun.ido.utils.CommmonUtil;
 import com.bsyun.ido.utils.MUtils;
 import com.google.android.material.navigation.NavigationView;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -33,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             Manifest.permission.READ_EXTERNAL_STORAGE,
             Manifest.permission.WRITE_EXTERNAL_STORAGE};
     private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +84,13 @@ public class MainActivity extends AppCompatActivity {
                 toolbar.setTitle("当前关闭消息接收");
                 intent.setAction(CommmonUtil.ACTION_START);
                 sendBroadcast(intent);
+                break;
+            case R.id.help_settings:
+                startActivity(new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS));
+                break;
+            case R.id.access:
+                intent = new Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS);
+                startActivity(intent);
                 break;
         }
         return false;
