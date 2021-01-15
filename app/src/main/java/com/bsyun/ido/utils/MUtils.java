@@ -9,7 +9,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.bsyun.ido.WeChatLogService;
+import com.bsyun.ido.services.WeChatLogService;
 
 
 public class MUtils {

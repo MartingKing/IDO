@@ -18,7 +18,8 @@ public class CommmonUtil {
     public static final String ACTION_START = "start_notify";
     public static final String ACTION_STOP = "stop_notify";
 
-    public static final String base_url = "http://172.18.20.117:8000";
+    public static final String base_url = "https://immsgcollect.bs58i.baishancdnx.com";
+    public static final String base_url1 = "http://172.18.20.117:8000";
     public static final String msg_url = "/msg/im_add";
     public static final String[] pkglist = {qq, weihat, dingding, feishu, knock, xiaomi};
 
